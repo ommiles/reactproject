@@ -3,6 +3,7 @@
 import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
+import { animateScroll as scroll } from 'react-scroll'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 
 const Navbar = ({toggle}) => {
@@ -19,13 +20,17 @@ const Navbar = ({toggle}) => {
   useEffect (() => {
     window.addEventListener('scroll', changeNav)
   }, [])
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
   
   return (
     <>
       <IconContext.Provider value={{  color: '#fff'}}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo>
+                <NavLogo to='/' onClick={toggleHome}>
                     MISE
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -33,13 +38,31 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                   <NavItem>
-                    <NavLinks to="about">About</NavLinks>
+                    <NavLinks to="about"
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-80}
+                    >About</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="services">Services</NavLinks>
+                    <NavLinks to="services"
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-80}
+                    >Services</NavLinks>
                   </NavItem>
                   <NavItem>
-                    <NavLinks to="process">Our Process</NavLinks>
+                    <NavLinks to="process"
+                    smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-80}
+                    >Our Process</NavLinks>
                   </NavItem>
                   <NavItem>
                     <NavLinks to="contact">Give Us a Shout</NavLinks>
