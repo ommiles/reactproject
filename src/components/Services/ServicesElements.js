@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 
 export const ServicesContainer = styled.div`
-    height: 800px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #010606;
+    overflow: hidden;
 
     @media screen and (max-width: 768px) {
         height: 1100px;
@@ -21,16 +22,16 @@ export const ServicesWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-templates-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 768px) {
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }

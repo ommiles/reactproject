@@ -12,17 +12,23 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
                     <ServicesH2>Text</ServicesH2>
-                    <ServicesP>Text</ServicesP>
-                </ServicesCard>
-                <ServicesCard>
-                    <ServicesIcon src={Icon2} />
-                    <ServicesH2>Text</ServicesH2>
-                    <ServicesP>Text</ServicesP>
+                    <ServicesP>
+                        We help reduce your fees and increase your overall revenue.
+                    </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
                     <ServicesH2>Text</ServicesH2>
-                    <ServicesP>Text</ServicesP>
+                    <ServicesP>
+                    Unlock our special membership card that returns 5% cash back.
+                    </ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon2} />
+                    <ServicesH2>Text</ServicesH2>
+                    <ServicesP>
+                        You can access our platform online anywhere in the world.
+                    </ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

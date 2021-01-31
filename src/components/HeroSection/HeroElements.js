@@ -10,6 +10,7 @@ export const HeroContainer = styled.div`
     height: 1000px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 `
 
 export const HeroBg = styled.div`

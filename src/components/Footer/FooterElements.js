@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
     background-color: #101522;
+    overflow: hidden;
 `
 
 export const FooterWrap = styled.div`
@@ -25,8 +26,9 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
 
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 411px) {
         flex-direction: column;
     }
 `
@@ -35,21 +37,27 @@ export const FooterLinkItems = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 16px;
+    flex: 25%;
     text-align: left;
     width: 160px;
     box-sizing: border-box;
     color: #fff;
 
-    @media and screen (max-width: 420px) {
+    @media and screen (max-width: 411px) {
         margin: 0;
         padding: 10px;
         width: 100%;
     }
+
+    @media screen and (max-width: 820px) {
+        padding: 10px;
+        flex: 50%;
+    }
 `
 
 export const FooterLinkTitle = styled.h1`
-    font-size: 14px;
+    font-size: 15px;
+    text-transform: uppercase;
     margin-bottom: 16px;
 `
 
@@ -79,6 +87,10 @@ export const SocialMediaWrap = styled.div`
 
     @media screen and (max-width: 820px) {
         flex-direction: column;
+    }
+
+    @media screen and (max-width: 411px) {
+        
     }
 `
 
