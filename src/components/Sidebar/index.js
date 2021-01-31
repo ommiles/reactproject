@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/signIn'>
+                    <SidebarRoute to='/signin'>
                         Client Portal
                     </SidebarRoute>
                 </SideBtnWrap>
